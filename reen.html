@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <title></title>
+  </head>
+  <body>
+    <style>
+      .min-header{
+        height: 40px;
+        line-height: 40px;
+        font-size:12px;
+        color:#506a85;
+        background:#f5f7fa; 
+        border: 1px  solid #e6e9ed;
+      }
+
+      .head-info span:first-child{
+        margin-right: 20px;
+      }
+      .head-soc{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: right;
+        display: block;
+        width: 100%
+
+      }
+      .head-soc li:last-child{
+        margin-right: 0px;
+      }
+      .head-soc li{
+        display: inline-block;
+        margin: 0 10px;
+
+      }
+      .head-soc li a{
+        font-size: 14px;
+        color:skyblue;
+      }
+      .head-soc li a:hover , .head-soc li a:active , .head-soc li a:visited{
+        color: darkblue;
+      }
+
+      .main-header{
+        height: 112px;
+        border: 1px solid #e6e9ed;
+      }
+      .icon{
+        margin: 30px 20px 10px 0px;
+      }
+      .menu{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+        display: block;
+        width: 100%
+        ;
+      }
+
+      .menu li:first-child{
+        margin-left: 0;
+        
+      }
+      .menu li:last-child{
+        float: right;
+      }
+      .menu li{
+        display: inline-block;
+        margin : 30px 10px;
+        
+      }
+      .menu li a{
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #506a85
+      }
+      .menu li a:hover, .menu li a:active, .menu li a:visited{
+         color: #506a85
+      }
+
+
+      .featured-area{
+        height: 12in;
+        background: #526d86;
+        background-image: url(img/background.jpg);
+
+
+      }  
+      .featured-area h1{
+        display: block;
+        width: 100%;
+        font-size: 74px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+      }
+
+
+      .featured-area p{
+        font-size: 24px;
+        color: #a3b1bf;
+      }
+
+      .featured-area-content{
+        width: 960px;
+        max-width: 100%;
+        color: white;
+        margin:0 auto;
+        padding-top: 4in;
+      }
+
+      .featured-area-btn{
+        background-color: #00bc9c;
+        margin-top: 1in;
+        font-size: 35px;
+        text-transform: uppercase;
+
+      }
+
+      .services{
+        height: 9.2in;
+      }
+      .services h1{
+        display: block;
+        width: 100%;
+        font-size: 48px;
+        padding-top: 1.5in;
+        font-weight: bold;
+        color: #506a85;
+        text-transform: uppercase;
+      }
+      .services p{
+        padding-top: 0.5in;
+        font-size: 24px;
+        color: #96a5b4;
+
+      }
+      .services-area{
+         width: 960px;
+        max-width: 100%;
+        color: #506a85;
+        margin:0 auto;
+        padding-top: 4in;
+
+      }
+
+      
+     
+    </style>
+ <header>
+          <div class="min-header ">
+            
+            <div class="container">
+              
+              <div class="row ml-0 mr-0">
+                  
+                  <div class=" head-info col-sm-6">
+                      <span ><i class="fa fa-envelope"></i> Brillbrains@technolabs.com</span>
+                      <span><i class="fa fa-mobile-phone " style="font-size: 16px;"></i>  77777XXXXX</span>
+                 </div>
+
+                 <div class="head-soc col-sm-6">
+                      <ul>
+                       <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                       <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                       <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                      </ul>
+                  </div>
+                  
+                 </div>
+          </div>
+
+              </div>
+             
+
+               <div class="main-header ">
+                     <div class="container">
+                            <div class="row ml-0 mr-0">
+                                    <div class="icon col-sm-2">
+                                      <span><img src="img/logo.png" alt="logo"></span>
+                                    </div>
+                                    <div class="menu col-sm-8">
+                                    <nav class="menu-item">
+                                      
+                                      <ul class="menu">
+                                              <li><a href="">HOME</a></li>
+                                              <li><a href="">PORTFOLIO</a></li>
+                                              <li><a href="">BLOG</a></li>
+                                              <li><a href="">PAGES</a></li>
+                                              <li><a href="">MEGA MENU</a></li>
+                                              <li><a href="">FEATURES</a></li>
+                                              <li><a href="">CONTACTS</a></li>
+                                              <li><a href=""><i class="fa fa-search"></i></a></li>
+                                      </ul>
+                                    </nav>
+                                   </div>
+                                   <div class="search col-sm-2">
+                                   </div>  
+                           </div>
+                    </div>   
+               </div>
+          </div>
+ </header><!--header area -->
+ 
+
+
+<section class="featured-area">
+
+  <div class="container  text-center">
+
+  <div class="featured-area-content">
+    <div class=" row ml-0 mr-0">
+    <h1>Made for Designers</h1>
+    <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
+  </div>
+
+  <div class="row ml-0 mr-0">
+    <a href="" type="button" class=" featured-area-btn btn btn-success btn-lg mx-auto">Get Started Now</a>
+  </div>
+  </div>
+  
+ </div> 
+</section><!--content area -->
+
+
+<section class="services">
+<div class="container text-center">
+  <div class="service-area">
+      <div class=" row ml-0 mr-0">
+    <h1>Beautiful. Clean. Responsive.</h1>
+    <p>REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute best.</p>
+  </div>
+
+  <div class="row ml-0 mr-0"></div>
+    <div class="service-content-1 col-sm-4">
+
+      
+    </div>
+    <div class="service-content-2 col-sm-4">
+      
+    </div>
+    <div class="service-content-3 col-sm-4">
+      
+    </div>
+    
+  </div>
+ 
+
+ </div>
+ 
+</section>
+
+
+
+</body>
+</html>
