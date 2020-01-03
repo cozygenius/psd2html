@@ -3,7 +3,7 @@
 
 <head>
 
-
+    <title>psd2html</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,14 +14,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!--font awesome kit-->
     <script src="https://kit.fontawesome.com/0541f20c1a.js" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title></title>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+
+
 </head>
 
 <body>
@@ -150,120 +156,245 @@
         /* FEATURED AREA ENDS */
         
         .services {
-            height: 9.2in;
+            padding: 125px 0;
+            text-align: center;
         }
         
-        .services h1 {
-            display: block;
+        .service-head-container {
+            width: 840px;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        
+        .service-head h2 {
             width: 100%;
-            font-size: 48px;
-            padding-top: 1.5in;
+            text-align: center;
+            font-size: 42px;
             font-weight: bold;
             color: #506a85;
-            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 35px;
         }
         
-        .services p {
-            padding-top: 0.5in;
-            font-size: 25px;
-            color: #96a5b4;
+        .service-head p {
+            font-size: 22px;
+            color: #73879c;
         }
         
-        .services-area {
-            width: 960px;
-            max-width: 100%;
-            color: #506a85;
-            margin: 0 auto;
-            padding-top: 4in;
-        }
-        
-        .service-area-content {
-            width: 1042px;
-            max-width: 100%;
+        .service-content {
+            margin-top: 60px;
         }
         
         .service-icon {
-            height: 0.8in;
-            width: 0.7in;
-            font-size: 54px;
+            font-size: 50px;
             color: #00bc9c;
         }
         
         .service-text h3 {
-            text-align: left;
-            padding-top: 11px;
-            font-weight: bold;
+            font-size: 26px;
             color: #506a85;
+            text-align: left;
         }
         
         .service-text p {
-            padding-top: 16px;
             font-size: 16px;
+            color: #73879c;
             text-align: left;
         }
         
-        .service-row {
-            width: 5in;
-            max-width: 100%;
+        .service-col .service-icon,
+        .service-col .service-text {
+            float: left;
         }
         
-        .service-row-content {
-            padding-top: 90px;
+        .service-col .service-icon {
+            width: 80px;
+            text-align: left;
         }
         
-        .service-content-1 {
-            margin-left: -50px;
-        }
-        
-        .service-content-2 {
-            margin-left: 20px;
-        }
-        
-        .service-content-3 {
-            margin-left: 30px;
+        .service-col .service-text {
+            width: calc(100% - 80px);
         }
         /* SERVICES ENDS */
+        /* blog-area starts */
         
-        .blog-area {
-            height: 17in;
+        .home-post {
+            padding: 125px 0;
             background-color: #f2f5f7;
-            border: 1px solid #a3b1bf;
         }
         
-        .blog-text-area {
-            padding-top: 1.7in;
-            color: #506a85;
-            font-size: large;
-            padding-bottom: 1.1in;
-        }
-        
-        .blog-text-area h3 {
+        .section-head h2,
+        .section-head p {
+            width: 100%;
             text-align: center;
-            font-size: 3.75rem;
-            padding-bottom: 0.5in;
         }
         
-        .blog-text-area p {
-            text-align: left;
-            font-size: 30px;
+        .section-head {
+            margin-bottom: 1in
+        }
+        
+        .section-head h2 {
+            font-size: 44px;
+            color: #506a85;
+            margin-bottom: 20px;
+        }
+        
+        .section-head p {
+            font-size: 22px;
+            color: #73879c;
+        }
+        
+        .latest-post {
+            margin-bottom: 60px;
+        }
+        
+        .post-inner-col {
+            background-color: white;
         }
         
         .post-meta {
-            background-color: white;
-            height: 1.5in;
+            padding: 15px;
+        }
+        
+        .post-meta h4,
+        .post-meta p {
             text-align: center;
+            width: 100%;
         }
         
         .post-meta h4 {
+            font-size: 20px;
             color: #506a85;
-            font-weight: bold;
-            font-size: 16px;
-            padding-top: 0.4in;
         }
         
         .post-meta p {
+            font-size: 14px;
+            color: #73879c;
+        }
+        
+        .carousel-row {
+            margin-top: 80px;
+        }
+        
+        .owl-dots {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .owl-dots button {
+            display: inline-block;
+            border: 8px solid #506a85 !important;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        
+        .owl-dots button.active {
+            border-color: #00bc9c !important;
+        }
+        /* register */
+        
+        .register {
+            padding: 130px;
+            text-align: center;
+            border: 1px solid #506a85;
+        }
+        
+        .register h4 {
+            font-size: 53px;
+            margin-bottom: 42px;
+            font-weight: bold;
+        }
+        
+        .register p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 28px;
+            padding-bottom: 35px;
+        }
+        
+        .register h4,
+        .register p {
             color: #506a85;
-            font-size: small;
+        }
+        
+        .register a {
+            background-color: #00bc9c;
+            margin-top: 1in;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+        /* for mobile devices */
+        
+        .menu-toggle {
+            position: absolute;
+            right: 17px;
+            top: 21px;
+            font-size: 42px;
+            color: #506a85;
+            display: none;
+        }
+        
+        .menu-toggle:visited,
+        .menu-toggle:active {
+            color: #506a85;
+        }
+        
+        @media all and (max-width: 576px) {
+            .head-info {
+                display: none;
+            }
+            .menu {
+                background-color: #506a85;
+                padding-bottom: 10px;
+            }
+            .main-header {
+                position: relative;
+            }
+            .menu-item {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                top: 37px;
+                display: none;
+            }
+            .menu-toggle {
+                display: inline-block;
+            }
+            .menu li {
+                width: 100%;
+                margin: 0;
+                border: 1px solid black;
+                padding-top: 10px;
+            }
+            .menu li:last-child {
+                display: none;
+            }
+            .menu li a {
+                color: white;
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+            }
+            .menu li a:hover,
+            .menu li a:visited {
+                color: white;
+            }
+            .featured-area {
+                height: 480px;
+            }
+            .featured-area-content {
+                padding-top: 50px;
+            }
+            .featured-area-content h1 {
+                font-size: 40px;
+            }
+            .featured-area-content p {
+                font-size: 18px;
+            }
+            .post-col:first-child {
+                margin-bottom: 15px;
+            }
         }
     </style>
     <header>
@@ -313,6 +444,7 @@
                             </ul>
                         </nav>
                     </div>
+                    <a href="javascript:" class="menu-toggle"><i class="fas fa-bars"></i></a>
                     <div class="search col-sm-2">
                     </div>
                 </div>
@@ -337,102 +469,159 @@
     </section>
     <!--content area  ends-->
 
-
+    <!-- services-starts -->
     <section class="services">
-        <div class="container text-center">
-            <div class="service-area">
-                <div class="service-area-content row ml-0 mr-0">
-                    <h1>Beautiful. Clean. Responsive.</h1>
-                    <p>REEN is a high-quality solution for those who want a beautiful website in no time.It's fully responsive a nd will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute
+        <div class="container ">
+            <div class="service-head row ml-0 mr-0">
+                <div class="service-head-container">
+                    <h2>Beautiful. Clean. Responsive.</h2>
+                    <p>REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive a nd will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute
                         best.
                     </p>
                 </div>
-                <div class="service-row-content row ml-0 mr-0">
-                    <div class="service-content-1 col-sm-4">
-                        <div class="service-row row">
-                            <div class="service-icon  col-sm-3">
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="service-text col-sm-9">
-                                <h3>Passion</h3>
-                                <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
-                                </p>
-                            </div>
-                        </div>
+            </div>
+            <div class="service-content row ml-0 mr-0">
+                <div class="service-col col-sm-4">
+                    <div class="service-icon">
+                        <i class="far fa-heart"></i>
                     </div>
-                    <div class="service-content-2 col-sm-4">
-                        <div class=" service-row row">
-                            <div class="service-icon  col-sm-3">
-                                <i class="far fa-lightbulb"></i>
-                            </div>
-                            <div class="service-text col-sm-9">
-                                <h3>Creativity</h3>
-                                <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
-                                </p>
-                            </div>
-                        </div>
+                    <div class="service-text">
+
+                        <h3>Passion</h3>
+                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                        </p>
                     </div>
-                    <div class="service-content-3 col-sm-4">
-                        <div class=" service-row row">
-                            <div class="service-icon  col-sm-3">
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="service-text col-sm-9">
-                                <h3>Quality</h3>
-                                <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
                 </div>
+                <!--service-col -->
+                <div class="service-col col-sm-4">
+                    <div class="service-icon">
+                        <i class="far fa-lightbulb"></i>
+                    </div>
+                    <div class="service-text">
+
+                        <h3>Creativity</h3>
+                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                        </p>
+                    </div>
+                </div>
+                <!--service-col -->
+                <div class="service-col col-sm-4">
+                    <div class="service-icon">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="service-text">
+
+                        <h3>Quality</h3>
+                        <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                        </p>
+                    </div>
+                </div>
+                <!--service-col -->
             </div>
 
+        </div>
     </section>
     <!--service-area ends-->
 
-    <section class="blog-area ">
+
+    <!-- bloag-start -->
+
+    <section class="home-post">
         <div class="container text-center">
-            <div class="row ml-0 mr-0">
-                <div class="blog-text-area col-sm-12">
-                    <h3>Check out our latest works</h3>
-                    <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor</p>
-                </div>
-
+            <div class="section-head row ml-0 mr-0">
+                <h2>Check out our latest works</h2>
+                <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor</p>
             </div>
-            <div class=" blog-post row ml-0 mr-0 ">
-                <div class="blog-post-latest col-sm-6">
-                    <div class="post-inner">
-                        <img src="img/blog1.jpg" alt="blog1" class="img-fluid">
-                    </div>
-                    <div class="post-meta">
-                        <h4>Grand Motel gets an identity brushup</h4>
-                        <p>Identity</p>
+            <div class="latest-post row ml-0 mr-0">
+                <div class="post-col col-sm-6">
+                    <div class="post-inner-col">
+                        <img src="img/blog1.jpg" alt="post-name" class="img-fluid">
+                        <div class="post-meta">
+                            <h4>Grand Motel gets an identity brushup</h4>
+                            <p>Identity</p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="blog-post-latest col-sm-6">
-                    <div class="post-inner">
+                <!-- post col -->
+                <div class="post-col col-sm-6">
+                    <div class="post-inner-col">
                         <img src="img/blog2.jpg" alt="blog1" class="img-fluid">
-                    </div>
-                    <div class="post-meta">
-                        <h4>Fresh branding for a creative startup</h4>
-                        <p>Identity</p>
+                        <div class="post-meta">
+                            <h4>Fresh branding for a creative startup</h4>
+                            <p>Identity</p>
+                        </div>
+
                     </div>
                 </div>
+                <!-- post col -->
+            </div>
+            <div class="carousel-row row ml-0 mr-0">
+                <div class="owl-carousel">
+                    <div><img src="img/item1.jpg"></div>
+                    <div><img src="img/item2.png"></div>
+                    <div><img src="img/item3.png"></div>
+                    <div><img src="img/item4.png"></div>
+                    <div><img src="img/item1.jpg"></div>
+                    <div><img src="img/item2.png"></div>
+                    <div><img src="img/item3.png"></div>
+                    <div><img src="img/item4.png"></div>
+                    <div><img src="img/item1.jpg"></div>
+                    <div><img src="img/item2.png"></div>
+                    <div><img src="img/item3.png"></div>
+                    <div><img src="img/item4.png"></div>
+                    <div><img src="img/item1.jpg"></div>
+                    <div><img src="img/item2.png"></div>
+                    <div><img src="img/item3.png"></div>
+                    <div><img src="img/item4.png"></div>
+
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $('.owl-carousel').owlCarousel({
+                            loop: true,
+                            margin: 21,
+                            responsiveClass: true,
+                            nav: false,
+                            dots: true,
+                            autoplay: true,
+                            responsive: {
+                                0: {
+                                    items: 1,
+
+                                },
+                                600: {
+                                    items: 3,
+
+                                },
+                                1000: {
+                                    items: 5,
+
+                                }
+                            }
+                        });
+                        $('.menu-toggle').click(function() {
+                            $('.menu-item').fadeToggle();
+                        });
+                    });
+                </script>
+
+            </div>
+
+    </section>
+    <!-- blog-end -->
+
+    <section class="register">
+        <div class="container text-center ">
+            <div class="register-content">
+                <h4>Want to work with us?</h4>
+                <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                <a href="" class="btn btn-success btn-lg mx-auto">Get In Touch</a>
             </div>
 
         </div>
-        </div>
-        <div class="row ml-0 mr-0">
 
-        </div>
     </section>
-
-
 
 </body>
 
