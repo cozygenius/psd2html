@@ -300,27 +300,28 @@
         }
         
         .register h4 {
-            font-size: 53px;
-            margin-bottom: 42px;
-            font-weight: bold;
+            display: block;
+            width: 100%;
+            font-size: 64px;
+            margin-bottom: 40px;
         }
         
         .register p {
-            margin-top: 0;
-            margin-bottom: 1rem;
             font-size: 28px;
-            padding-bottom: 35px;
         }
         
-        .register h4,
-        .register p {
+        .register-content {
+            width: 885px;
+            padding-top: 140px;
+            max-width: 100%;
             color: #506a85;
+            margin: 0 auto;
         }
         
-        .register a {
+        .register-btn {
             background-color: #00bc9c;
-            margin-top: 1in;
-            font-size: 25px;
+            font-size: 16px;
+            margin-top: 50px;
             text-transform: uppercase;
         }
         /* for mobile devices */
@@ -338,6 +339,98 @@
         .menu-toggle:active {
             color: #506a85;
         }
+        /* footer section */
+        
+        .main-footer {
+            height: 370px;
+            background: #2f4052;
+            color: white;
+        }
+        
+        .main-footer h6 {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .main-footer p {
+            color: #9eacba;
+            font-size: 12px;
+        }
+        
+        .main-footer-content {
+            padding-top: 70px;
+        }
+        
+        .main-footer-logo-firstpara {
+            padding-top: 25px;
+        }
+        
+        .main-footer-address p {
+            margin-bottom: 25px;
+        }
+        
+        .subrow {
+            position: relative;
+        }
+        
+        .mailbox {
+            background-color: #4e5c6c;
+            color: white;
+            font-size: small;
+            border: none;
+            padding-left: 5px;
+            padding-right: 20px;
+        }
+        
+        .col-icon {
+            margin-left: 10px;
+        }
+        
+        .min-footer {
+            height: 80px;
+            font-size: 10pt;
+            background-color: #283645;
+            color: #bbbbbb;
+        }
+        
+        .footer-content {
+            padding-top: 30px;
+        }
+        
+        .footer-menu-item {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+            display: block;
+            width: 100%
+        }
+        
+        .footer-menu-item li:first-child {
+            margin-left: 100px;
+        }
+        
+        .footer-menu-item li:last-child {
+            float: right;
+            margin-right: 0;
+            font-size: 28px;
+        }
+        
+        .footer-menu-item li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        .footer-menu-item li a {
+            color: #bbbbbb;
+        }
+        
+        .footer-menu-item li a:hover,
+        .footer-menu-item li a:active,
+        .footer-menu-item li a:visited {
+            color: #bbbbbb;
+        }
+        /* footer section ends */
         
         @media all and (max-width: 576px) {
             .head-info {
@@ -394,6 +487,19 @@
             }
             .post-col:first-child {
                 margin-bottom: 15px;
+            }
+            .register {
+                padding: 0px;
+                padding-bottom: 35px;
+            }
+            .register-content h4 {
+                font-size: 40px;
+            }
+            .register-content p {
+                font-size: 18px;
+            }
+            .footer-menu {
+                display: none;
             }
         }
     </style>
@@ -611,17 +717,112 @@
     </section>
     <!-- blog-end -->
 
+
+    <!-- registration start -->
+
     <section class="register">
-        <div class="container text-center ">
+        <div class=" container text-center">
             <div class="register-content">
-                <h4>Want to work with us?</h4>
-                <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-                <a href="" class="btn btn-success btn-lg mx-auto">Get In Touch</a>
+                <div class="row ml-0 mr-0">
+                    <h4>Want to work with us?</h4>
+                    <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                </div>
+                <div class="row ml-0 mr-0">
+                    <a href="" type="button" class=" register-btn btn btn-success btn-lg mx-auto">Get Started Now</a>
+                </div>
             </div>
 
         </div>
-
     </section>
+    <!-- regester end -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="main-footer-content row ml-0 mr-0">
+                    <div class="main-footer-logo col-sm-3">
+                        <h6>Who we are</h6>
+                        <img src="img/smlogo.png" alt="logo">
+                        <p class="main-footer-logo-firstpara">Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                        <span> <p> More about us<i class="col-icon  fas fa-arrow-right"></i></p></span>
+                    </div>
+                    <div class="main-footer-widget col-sm-3">
+
+                        <h6>Latest works</h6>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="img/thum1.png" alt="grand-motel">
+                                </td>
+                                <td>
+                                    <img src="img/thum2.png" alt="icon">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/thum3.png" alt="record">
+                                </td>
+                                <td>
+                                    <img src="img/thum4.png" alt="mob">
+                                </td>
+                            </tr>
+
+                        </table>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </div>
+                    <div class="main-footer-address col-sm-3">
+
+                        <h6>Get in touch</h6>
+                        <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                        <p> <img src="img/icon-location.png"> Street, City, State 24813</p>
+                        <p> <img src="img/icon-mobile.png"> +00 (123) 456 78 90</p>
+                        <p> <img src="img/icon-mail-1.png"> Brillbrains@technolabs.com</p>
+                    </div>
+                    <div class="main-footer-subscribe col-sm-3">
+                        <h6>Free updates</h6>
+                        <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+                        <div class="subrow row ml-0 mr-0">
+                            <input class="mailbox" type="email" placeholder="Enter your email adddress">
+                            <input type="button" class="subtn btn btn-success btn-sm mx-auto" value="Subscribe">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="min-footer">
+            <div class="container">
+                <div class="footer-content row ml-0 mr-0">
+                    <div class="footer-text col-sm-3">
+                        <p>© 2014 REEN. All rights reserved.</p>
+
+                    </div>
+                    <div class="footer-menu col-sm-9">
+                        <ul class="footer-menu-item">
+                            <li><a href="">HOME .</a></li>
+                            <li><a href="">PORTFOLIO .</a></li>
+                            <li><a href="">BLOG . </a></li>
+                            <li><a href="">ABOUT . </a></li>
+                            <li><a href="">SERVICE .</a></li>
+                            <li><a href="">CONTACTS </a></li>
+                            <li><a href=""><i class="fas fa-caret-square-up"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
 
 </body>
 
